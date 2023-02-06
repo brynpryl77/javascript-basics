@@ -192,13 +192,71 @@ const address = {
 
 // console.log(clone);
 
-const person = {
-  id: 1,
-  name: "Jake Jose",
-  age: 25,
-  address: "Mabuhay",
-};
+// const person = {
+//   id: 1,
+//   name: "Jake Jose",
+//   age: 25,
+//   address: "Mabuhay",
+// };
 
-const { id, ...nonIds } = person;
+// const additionalPersonProps = {
+//   career: "actor",
+//   business: "woodworks",
+// };
 
-console.log(nonIds);
+// const joinedPerson = { ...additionalPersonProps, ...person };
+// const { id, ...nonIds } = person;
+
+// // console.log(nonIds);
+// // console.log(joinedPerson);
+
+// function logPerson({ name: nm, business }) {
+//   console.log(`Person name: ${nm}`);
+//   console.log(`Person business: ${business}`);
+// }
+// logPerson(joinedPerson);
+
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   walk() {
+//     console.log(`${this.name} is walking...`);
+//   }
+// }
+// // const per = new Person("Joaquin");
+// // per.walk();
+
+// class Trainor extends Person {
+//   constructor(name, topic) {
+//     super(name);
+//     this.topic = topic;
+//   }
+//   train() {
+//     console.log(`${this.name} is training ${this.topic}`);
+//   }
+// }
+// const trainor = new Trainor("Jack", "react");
+// trainor.train();
+
+// export import
+// named default
+
+export const name1 = "Roger";
+export const name2 = "Jenny";
+export const name3 = "Jack";
+
+export function login() {
+  console.log("export login...");
+}
+export function register() {
+  console.log("export register...");
+}
+export function logout() {
+  console.log("export logout...");
+}
+// export default "John";
+
+const myNumber = 5;
+
+export default myNumber;
